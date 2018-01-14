@@ -52,22 +52,3 @@ indices = np.argsort(importances)[::-1]
 print indices
 print max(indices)
 print min(indices)
-
-
-for f in range(test_x.shape[1]):
-#        print "f"
-#        print f
-#        print "==="
-#        print "indices"
-#        print indices[f]
-      #  if indices[f] == 0:
-      #      print "FOUND 0, skipping"
-      #      print f
-      #      continue
-#        print "xxx"
-        idx = indices[f]
-        print("%d. feature %d (%f)" % (f + 1, indices[f], importances[indices[f]]))
-        print("%d. %s (%f)" % (f + 1, feat_names[idx+1], importances[idx]))
-
-print feat_names[1]
-print feat_names[115]
